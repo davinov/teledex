@@ -1,3 +1,5 @@
+widget_types_controller = require './controllers/widget_types_controller'
+
 class Router
 	constructor: (@server) ->
 		console.log 'Setting up routes'
@@ -9,6 +11,10 @@ class Router
 		@server.get '/hello', (req, res, next) ->
 			res.send 'Hi!'
 			next()
+
+		# GET /widget_types
+		# Return the list of available widget types
+		@server.get '/widget_types', widget_types_controller.index
 	
 
 exports.Router = Router

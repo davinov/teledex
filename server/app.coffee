@@ -11,7 +11,7 @@ server.use restify.queryParser()  # Parses the HTTP query string
 server.listen config.server.port, -> console.log "#{server.name} listening on #{server.url}"
 
 # Connect to MongoDB
-mongoose = new db.MongoConnector(config.db.url).connect()
+new db.MongoConnector(config.db.url).connect()
 
 # Set up the router
 router = new router.Router server
