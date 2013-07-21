@@ -3,5 +3,7 @@ teledex
 
 Group first (not user first) communication
 
-##Build
-`sudo npm install -g bbb` then `bbb <task>`
+
+#Frontend
+See `https://github.com/brettjonesdev/Marionette-Require-Boilerplate` to install the dependencies.
+Run `nodemon`
