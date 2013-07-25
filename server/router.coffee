@@ -12,9 +12,9 @@ class Router
 			res.send 'Hi!'
 			next()
 
-		# GET /widget_types
+		# GET /api/widget_types
 		# Return the list of available widget types
-		@server.get '/widget_types', widget_types_controller.index
+		@server.get '/api/widget_types', widget_types_controller.index
 	
 
 exports.Router = Router
